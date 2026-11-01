@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Components | MediPulse</title>
+  <meta name="description" content="MediPulse clinic and healthcare admin template built with Bootstrap 5.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link id="bs-css" rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"
+        data-ltr="assets/vendor/bootstrap/bootstrap.min.css" data-rtl="assets/vendor/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="app">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary">
+      <a class="sidebar__brand" href="index.html"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i><span class="sidebar__label">MediPulse</span></a>
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <p class="sidebar__heading">Dashboards</p>
+        <a class="sidebar__link" href="index.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span class="sidebar__label">Admin overview</span></a>
+        <a class="sidebar__link" href="dashboard-doctor.html"><i class="bi bi-person-badge" aria-hidden="true"></i><span class="sidebar__label">Doctor</span></a>
+        <a class="sidebar__link" href="dashboard-analytics.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span class="sidebar__label">Analytics</span></a>
+
+        <p class="sidebar__heading">Care</p>
+        <a class="sidebar__link" href="patients-list.html"><i class="bi bi-people" aria-hidden="true"></i><span class="sidebar__label">Patients</span></a>
+        <a class="sidebar__link" href="appointments-calendar.html"><i class="bi bi-calendar2-week" aria-hidden="true"></i><span class="sidebar__label">Appointments</span><span class="badge text-bg-warning sidebar__badge">8</span></a>
+        <a class="sidebar__link" href="doctors-list.html"><i class="bi bi-hospital" aria-hidden="true"></i><span class="sidebar__label">Doctors &amp; staff</span></a>
+        <a class="sidebar__link" href="beds.html"><i class="bi bi-door-open" aria-hidden="true"></i><span class="sidebar__label">Wards &amp; beds</span></a>
+
+        <p class="sidebar__heading">Operations</p>
+        <a class="sidebar__link" href="lab-tests.html"><i class="bi bi-eyedropper" aria-hidden="true"></i><span class="sidebar__label">Laboratory</span></a>
+        <a class="sidebar__link" href="pharmacy-inventory.html"><i class="bi bi-capsule" aria-hidden="true"></i><span class="sidebar__label">Pharmacy</span></a>
+        <a class="sidebar__link" href="invoices.html"><i class="bi bi-receipt" aria-hidden="true"></i><span class="sidebar__label">Billing</span></a>
+
+        <p class="sidebar__heading">UI kit</p>
+        <a class="sidebar__link active" href="ui-components.html" aria-current="page"><i class="bi bi-box" aria-hidden="true"></i><span class="sidebar__label">Components</span></a>
+        <a class="sidebar__link" href="ui-forms.html"><i class="bi bi-input-cursor-text" aria-hidden="true"></i><span class="sidebar__label">Forms</span></a>
+        <a class="sidebar__link" href="ui-tables-charts.html"><i class="bi bi-bar-chart" aria-hidden="true"></i><span class="sidebar__label">Tables and charts</span></a>
+
+        <p class="sidebar__heading">Apps</p>
+        <a class="sidebar__link" href="chat.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span class="sidebar__label">Chat</span></a>
+        <a class="sidebar__link" href="account-settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span class="sidebar__label">Settings</span></a>
+      </nav>
+    </aside>
+    <div class="sidebar-backdrop" data-mp-action="sidebar-close"></div>
+
+    <div class="main">
+      <!-- ===== Topbar ===== -->
+      <header class="topbar">
+        <button class="btn btn-link text-reset fs-4 p-1" type="button" data-mp-action="sidebar" aria-label="Toggle sidebar"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <form class="topbar__search" role="search">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="global-search">Search</label>
+          <input id="global-search" class="form-control" type="search" placeholder="Search patients, doctors, invoices">
+        </form>
+        <div class="topbar__actions">
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="dir" aria-label="Switch text direction"><i class="bi bi-text-paragraph" aria-hidden="true"></i></button>
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i></button>
+          <div class="dropdown">
+            <button class="btn btn-link text-reset fs-5 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+              <i class="bi bi-bell" aria-hidden="true"></i><span class="position-absolute top-0 start-50 p-1 bg-danger rounded-circle"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="notifications.html">Lab result ready for Amina Rahman</a></li>
+              <li><a class="dropdown-item" href="notifications.html">Low stock: Amoxicillin 500 mg</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="notifications.html">View all notifications</a></li>
+            </ul>
+          </div>
+          <div class="dropdown ms-2">
+            <button class="btn p-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu">
+              <span class="avatar" aria-hidden="true">NK</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><h2 class="dropdown-header fs-6 text-body">Dr. Nadia Karim<br><small class="text-muted-mp fw-normal">Administrator</small></h2></li>
+              <li><a class="dropdown-item" href="account-settings.html">Account settings</a></li>
+              <li><a class="dropdown-item" href="auth-lock-screen.html">Lock screen</a></li>
+              <li><a class="dropdown-item" href="auth-login.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===== Page content ===== -->
+      <main class="content" id="main-content">
+        <div class="page-head">
+          <div><h1>Components</h1><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Dashboards</a></li><li class="breadcrumb-item"><a href="ui-components.html">UI kit</a></li><li class="breadcrumb-item active" aria-current="page">Components</li></ol></nav></div>
+          
+        </div><article class="card mb-4"><header class="card-header">Buttons</header><div class="card-body"><div class="mb-3"><button class="btn btn-primary" type="button">Primary</button> <button class="btn btn-secondary" type="button">Secondary</button> <button class="btn btn-success" type="button">Success</button> <button class="btn btn-warning" type="button">Warning</button> <button class="btn btn-danger" type="button">Danger</button> <button class="btn btn-info" type="button">Info</button> </div><div class="mb-3"><button class="btn btn-outline-primary" type="button">Primary</button> <button class="btn btn-outline-secondary" type="button">Secondary</button> <button class="btn btn-outline-success" type="button">Success</button> <button class="btn btn-outline-warning" type="button">Warning</button> <button class="btn btn-outline-danger" type="button">Danger</button> <button class="btn btn-outline-info" type="button">Info</button> </div><div><button class="btn btn-primary btn-sm" type="button">Small</button> <button class="btn btn-primary" type="button">Default</button> <button class="btn btn-primary btn-lg" type="button">Large</button> <button class="btn btn-primary" type="button" disabled>Disabled</button></div></div></article><article class="card mb-4"><header class="card-header">Badges</header><div class="card-body"><div class="mb-3"><span class="badge text-bg-primary">Primary</span> <span class="badge text-bg-secondary">Secondary</span> <span class="badge text-bg-success">Success</span> <span class="badge text-bg-warning">Warning</span> <span class="badge text-bg-danger">Danger</span> <span class="badge text-bg-info">Info</span> </div><span class="status status--confirmed">Confirmed</span> <span class="status status--pending">Pending</span> <span class="status status--progress">In progress</span> <span class="status status--cancelled">Cancelled</span></div></article><article class="card mb-4"><header class="card-header">Alerts</header><div class="card-body"><div class="alert alert-success mb-2" role="alert">This is a success alert with a <a class="alert-link" href="#">link</a>.</div><div class="alert alert-warning mb-2" role="alert">This is a warning alert with a <a class="alert-link" href="#">link</a>.</div><div class="alert alert-danger mb-2" role="alert">This is a danger alert with a <a class="alert-link" href="#">link</a>.</div><div class="alert alert-info mb-2" role="alert">This is a info alert with a <a class="alert-link" href="#">link</a>.</div></div></article><article class="card mb-4"><header class="card-header">Progress</header><div class="card-body"><div class="progress mb-2" role="progressbar" aria-label="primary progress" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-primary" style="width:70%">70%</div></div><div class="progress mb-2" role="progressbar" aria-label="success progress" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success" style="width:45%">45%</div></div><div class="progress mb-2" role="progressbar" aria-label="warning progress" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width:30%">30%</div></div><div class="progress mb-2" role="progressbar" aria-label="danger progress" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-danger" style="width:15%">15%</div></div></div></article><article class="card mb-4"><header class="card-header">Modal and toast</header><div class="card-body"><button class="btn btn-primary me-2" type="button" data-bs-toggle="modal" data-bs-target="#demo-modal">Open modal</button><button class="btn btn-outline-primary" type="button" data-show-toast="#demo-toast">Show toast</button></div></article><article class="card mb-4"><header class="card-header">Tabs</header><div class="card-body"><ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#t1" type="button" role="tab" aria-selected="true">Overview</button></li><li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#t2" type="button" role="tab" aria-selected="false">Details</button></li></ul><div class="tab-content pt-3"><div class="tab-pane fade show active" id="t1" role="tabpanel">Overview content goes here.</div><div class="tab-pane fade" id="t2" role="tabpanel">Details content goes here.</div></div></div></article><article class="card mb-4"><header class="card-header">Dropdown and tooltip</header><div class="card-body"><div class="dropdown d-inline-block me-2"><button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Actions</button><ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Edit</a></li><li><a class="dropdown-item" href="#">Duplicate</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item text-danger" href="#">Delete</a></li></ul></div><span class="avatar-group"><span class="avatar" aria-hidden="true">AR</span> <span class="avatar" style="background:#0e9f9a" aria-hidden="true">LM</span> <span class="avatar" style="background:#f5a524" aria-hidden="true">YT</span></span></div></article>
+        <div class="modal fade" id="demo-modal" tabindex="-1" aria-labelledby="demo-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="demo-title">Discard changes?</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">Unsaved changes to this record will be lost.</div><div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Keep editing</button><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Discard</button></div></div></div></div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="demo-toast" class="toast" role="status" aria-live="polite" aria-atomic="true"><div class="toast-header"><strong class="me-auto">MediPulse</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div><div class="toast-body">Changes saved.</div></div></div>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lock screen | MediPulse</title>
+  <meta name="description" content="MediPulse clinic and healthcare admin template built with Bootstrap 5.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link id="bs-css" rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"
+        data-ltr="assets/vendor/bootstrap/bootstrap.min.css" data-rtl="assets/vendor/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="auth">
+    <aside class="auth__aside"><a class="sidebar__brand p-0" href="index.html" style="height:auto"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i>MediPulse</a><h2>Care that runs on clear information</h2><p class="mb-0 opacity-75">Appointments, records, lab and billing in one workspace.</p></aside>
+    <main class="auth__main" id="main-content">
+      <button class="btn btn-link text-reset fs-5 auth__theme" type="button" data-mp-action="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i></button>
+      <div class="auth__box"><h1 class="h3">Screen locked</h1><p class="text-muted-mp mb-4">Enter your password to continue as Dr. Nadia Karim.</p>
+        <div class="text-center mb-4"><span class="avatar profile-avatar m-0" style="margin-top:0" aria-hidden="true">NK</span></div>
+        <form class="needs-validation" novalidate action="index.html"><div class="mb-3"><label class="form-label" for="password">Password</label><div class="input-group"><input id="password" class="form-control" type="password" autocomplete="current-password" required><button class="btn btn-outline-secondary" type="button" data-toggle-password="password" aria-label="Show password"><i class="bi bi-eye" aria-hidden="true"></i></button><div class="invalid-feedback">Enter your password.</div></div></div><button class="btn btn-primary w-100" type="submit">Unlock</button></form>
+        <p class="text-center mt-4 mb-0"><a href="auth-login.html">Sign in as someone else</a></p>
+      </div>
+    </main>
+  </div>
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

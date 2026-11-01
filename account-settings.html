@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account settings | MediPulse</title>
+  <meta name="description" content="MediPulse clinic and healthcare admin template built with Bootstrap 5.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link id="bs-css" rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"
+        data-ltr="assets/vendor/bootstrap/bootstrap.min.css" data-rtl="assets/vendor/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="app">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary">
+      <a class="sidebar__brand" href="index.html"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i><span class="sidebar__label">MediPulse</span></a>
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <p class="sidebar__heading">Dashboards</p>
+        <a class="sidebar__link" href="index.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span class="sidebar__label">Admin overview</span></a>
+        <a class="sidebar__link" href="dashboard-doctor.html"><i class="bi bi-person-badge" aria-hidden="true"></i><span class="sidebar__label">Doctor</span></a>
+        <a class="sidebar__link" href="dashboard-analytics.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span class="sidebar__label">Analytics</span></a>
+
+        <p class="sidebar__heading">Care</p>
+        <a class="sidebar__link" href="patients-list.html"><i class="bi bi-people" aria-hidden="true"></i><span class="sidebar__label">Patients</span></a>
+        <a class="sidebar__link" href="appointments-calendar.html"><i class="bi bi-calendar2-week" aria-hidden="true"></i><span class="sidebar__label">Appointments</span><span class="badge text-bg-warning sidebar__badge">8</span></a>
+        <a class="sidebar__link" href="doctors-list.html"><i class="bi bi-hospital" aria-hidden="true"></i><span class="sidebar__label">Doctors &amp; staff</span></a>
+        <a class="sidebar__link" href="beds.html"><i class="bi bi-door-open" aria-hidden="true"></i><span class="sidebar__label">Wards &amp; beds</span></a>
+
+        <p class="sidebar__heading">Operations</p>
+        <a class="sidebar__link" href="lab-tests.html"><i class="bi bi-eyedropper" aria-hidden="true"></i><span class="sidebar__label">Laboratory</span></a>
+        <a class="sidebar__link" href="pharmacy-inventory.html"><i class="bi bi-capsule" aria-hidden="true"></i><span class="sidebar__label">Pharmacy</span></a>
+        <a class="sidebar__link" href="invoices.html"><i class="bi bi-receipt" aria-hidden="true"></i><span class="sidebar__label">Billing</span></a>
+
+        <p class="sidebar__heading">UI kit</p>
+        <a class="sidebar__link" href="ui-components.html"><i class="bi bi-box" aria-hidden="true"></i><span class="sidebar__label">Components</span></a>
+        <a class="sidebar__link" href="ui-forms.html"><i class="bi bi-input-cursor-text" aria-hidden="true"></i><span class="sidebar__label">Forms</span></a>
+        <a class="sidebar__link" href="ui-tables-charts.html"><i class="bi bi-bar-chart" aria-hidden="true"></i><span class="sidebar__label">Tables and charts</span></a>
+
+        <p class="sidebar__heading">Apps</p>
+        <a class="sidebar__link" href="chat.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span class="sidebar__label">Chat</span></a>
+        <a class="sidebar__link active" href="account-settings.html" aria-current="page"><i class="bi bi-gear" aria-hidden="true"></i><span class="sidebar__label">Settings</span></a>
+      </nav>
+    </aside>
+    <div class="sidebar-backdrop" data-mp-action="sidebar-close"></div>
+
+    <div class="main">
+      <!-- ===== Topbar ===== -->
+      <header class="topbar">
+        <button class="btn btn-link text-reset fs-4 p-1" type="button" data-mp-action="sidebar" aria-label="Toggle sidebar"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <form class="topbar__search" role="search">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="global-search">Search</label>
+          <input id="global-search" class="form-control" type="search" placeholder="Search patients, doctors, invoices">
+        </form>
+        <div class="topbar__actions">
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="dir" aria-label="Switch text direction"><i class="bi bi-text-paragraph" aria-hidden="true"></i></button>
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i></button>
+          <div class="dropdown">
+            <button class="btn btn-link text-reset fs-5 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+              <i class="bi bi-bell" aria-hidden="true"></i><span class="position-absolute top-0 start-50 p-1 bg-danger rounded-circle"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="notifications.html">Lab result ready for Amina Rahman</a></li>
+              <li><a class="dropdown-item" href="notifications.html">Low stock: Amoxicillin 500 mg</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="notifications.html">View all notifications</a></li>
+            </ul>
+          </div>
+          <div class="dropdown ms-2">
+            <button class="btn p-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu">
+              <span class="avatar" aria-hidden="true">NK</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><h2 class="dropdown-header fs-6 text-body">Dr. Nadia Karim<br><small class="text-muted-mp fw-normal">Administrator</small></h2></li>
+              <li><a class="dropdown-item" href="account-settings.html">Account settings</a></li>
+              <li><a class="dropdown-item" href="auth-lock-screen.html">Lock screen</a></li>
+              <li><a class="dropdown-item" href="auth-login.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===== Page content ===== -->
+      <main class="content" id="main-content">
+        <div class="page-head">
+          <div><h1>Account settings</h1><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Dashboards</a></li><li class="breadcrumb-item"><a href="account-settings.html">Utility</a></li><li class="breadcrumb-item active" aria-current="page">Settings</li></ol></nav></div>
+          
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3"><nav class="card" aria-label="Settings sections"><div class="nav flex-column nav-pills p-2" role="tablist">
+            <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#set-profile" type="button" role="tab" aria-selected="true">Profile</button>
+            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#set-security" type="button" role="tab" aria-selected="false">Security</button>
+            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#set-notify" type="button" role="tab" aria-selected="false">Notifications</button></div></nav></div>
+          <div class="col-lg-9 tab-content">
+            <article class="card tab-pane fade show active" id="set-profile" role="tabpanel"><header class="card-header">Profile</header><form class="card-body"><div class="d-flex align-items-center gap-3 mb-4"><span class="avatar profile-avatar m-0" style="margin-top:0" aria-hidden="true">NK</span><div><button class="btn btn-sm btn-outline-primary" type="button">Upload photo</button><div class="text-muted-mp small mt-1">PNG or JPG, up to 2 MB</div></div></div>
+              <div class="row g-3"><div class="col-md-6"><label class="form-label" for="s-first">First name</label><input id="s-first" class="form-control" type="text" value="Nadia"></div><div class="col-md-6"><label class="form-label" for="s-last">Last name</label><input id="s-last" class="form-control" type="text" value="Karim"></div><div class="col-md-6"><label class="form-label" for="s-email">Email</label><input id="s-email" class="form-control" type="email" value="nadia.karim@example.com"></div><div class="col-md-6"><label class="form-label" for="s-phone">Phone</label><input id="s-phone" class="form-control" type="tel" value="+1 555 0100"></div>
+              <div class="col-12"><label class="form-label" for="s-bio">Bio</label><textarea id="s-bio" class="form-control" rows="3">Clinic administrator.</textarea></div></div>
+              <div class="mt-4 text-end"><button class="btn btn-primary" type="submit">Save changes</button></div></form></article>
+            <article class="card tab-pane fade" id="set-security" role="tabpanel"><header class="card-header">Security</header><form class="card-body"><div class="row g-3"><div class="col-12"><label class="form-label" for="s-cur">Current password</label><input id="s-cur" class="form-control" type="password" value=""></div><div class="col-md-6"><label class="form-label" for="s-new">New password</label><input id="s-new" class="form-control" type="password" value=""></div><div class="col-md-6"><label class="form-label" for="s-conf">Confirm new password</label><input id="s-conf" class="form-control" type="password" value=""></div></div>
+              <div class="d-flex justify-content-between align-items-center py-3 border-bottom"><div><label class="form-check-label fw-semibold" for="s-2fa">Two-factor authentication</label><div class="text-muted-mp small">Ask for a code when signing in on a new device.</div></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="s-2fa" checked></div></div><div class="mt-4 text-end"><button class="btn btn-primary" type="submit">Update password</button></div></form></article>
+            <article class="card tab-pane fade" id="set-notify" role="tabpanel"><header class="card-header">Notifications</header><div class="card-body"><div class="d-flex justify-content-between align-items-center py-3 border-bottom"><div><label class="form-check-label fw-semibold" for="n-appt">Appointment changes</label><div class="text-muted-mp small">New, rescheduled and cancelled appointments.</div></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="n-appt" checked></div></div><div class="d-flex justify-content-between align-items-center py-3 border-bottom"><div><label class="form-check-label fw-semibold" for="n-lab">Lab results</label><div class="text-muted-mp small">When a result is ready to review.</div></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="n-lab" checked></div></div><div class="d-flex justify-content-between align-items-center py-3 border-bottom"><div><label class="form-check-label fw-semibold" for="n-stock">Low stock alerts</label><div class="text-muted-mp small">When a medicine falls below its reorder level.</div></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="n-stock"></div></div><div class="d-flex justify-content-between align-items-center py-3 border-bottom"><div><label class="form-check-label fw-semibold" for="n-bill">Billing updates</label><div class="text-muted-mp small">Payments received and overdue invoices.</div></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="n-bill"></div></div></div></article>
+          </div></div>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

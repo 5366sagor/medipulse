@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vital signs | MediPulse</title>
+  <meta name="description" content="MediPulse clinic and healthcare admin template built with Bootstrap 5.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link id="bs-css" rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"
+        data-ltr="assets/vendor/bootstrap/bootstrap.min.css" data-rtl="assets/vendor/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="app">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary">
+      <a class="sidebar__brand" href="index.html"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i><span class="sidebar__label">MediPulse</span></a>
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <p class="sidebar__heading">Dashboards</p>
+        <a class="sidebar__link" href="index.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span class="sidebar__label">Admin overview</span></a>
+        <a class="sidebar__link" href="dashboard-doctor.html"><i class="bi bi-person-badge" aria-hidden="true"></i><span class="sidebar__label">Doctor</span></a>
+        <a class="sidebar__link" href="dashboard-analytics.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span class="sidebar__label">Analytics</span></a>
+
+        <p class="sidebar__heading">Care</p>
+        <a class="sidebar__link active" href="patients-list.html" aria-current="page"><i class="bi bi-people" aria-hidden="true"></i><span class="sidebar__label">Patients</span></a>
+        <a class="sidebar__link" href="appointments-calendar.html"><i class="bi bi-calendar2-week" aria-hidden="true"></i><span class="sidebar__label">Appointments</span><span class="badge text-bg-warning sidebar__badge">8</span></a>
+        <a class="sidebar__link" href="doctors-list.html"><i class="bi bi-hospital" aria-hidden="true"></i><span class="sidebar__label">Doctors &amp; staff</span></a>
+        <a class="sidebar__link" href="beds.html"><i class="bi bi-door-open" aria-hidden="true"></i><span class="sidebar__label">Wards &amp; beds</span></a>
+
+        <p class="sidebar__heading">Operations</p>
+        <a class="sidebar__link" href="lab-tests.html"><i class="bi bi-eyedropper" aria-hidden="true"></i><span class="sidebar__label">Laboratory</span></a>
+        <a class="sidebar__link" href="pharmacy-inventory.html"><i class="bi bi-capsule" aria-hidden="true"></i><span class="sidebar__label">Pharmacy</span></a>
+        <a class="sidebar__link" href="invoices.html"><i class="bi bi-receipt" aria-hidden="true"></i><span class="sidebar__label">Billing</span></a>
+
+        <p class="sidebar__heading">UI kit</p>
+        <a class="sidebar__link" href="ui-components.html"><i class="bi bi-box" aria-hidden="true"></i><span class="sidebar__label">Components</span></a>
+        <a class="sidebar__link" href="ui-forms.html"><i class="bi bi-input-cursor-text" aria-hidden="true"></i><span class="sidebar__label">Forms</span></a>
+        <a class="sidebar__link" href="ui-tables-charts.html"><i class="bi bi-bar-chart" aria-hidden="true"></i><span class="sidebar__label">Tables and charts</span></a>
+
+        <p class="sidebar__heading">Apps</p>
+        <a class="sidebar__link" href="chat.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span class="sidebar__label">Chat</span></a>
+        <a class="sidebar__link" href="account-settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span class="sidebar__label">Settings</span></a>
+      </nav>
+    </aside>
+    <div class="sidebar-backdrop" data-mp-action="sidebar-close"></div>
+
+    <div class="main">
+      <!-- ===== Topbar ===== -->
+      <header class="topbar">
+        <button class="btn btn-link text-reset fs-4 p-1" type="button" data-mp-action="sidebar" aria-label="Toggle sidebar"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <form class="topbar__search" role="search">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="global-search">Search</label>
+          <input id="global-search" class="form-control" type="search" placeholder="Search patients, doctors, invoices">
+        </form>
+        <div class="topbar__actions">
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="dir" aria-label="Switch text direction"><i class="bi bi-text-paragraph" aria-hidden="true"></i></button>
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i></button>
+          <div class="dropdown">
+            <button class="btn btn-link text-reset fs-5 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+              <i class="bi bi-bell" aria-hidden="true"></i><span class="position-absolute top-0 start-50 p-1 bg-danger rounded-circle"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="notifications.html">Lab result ready for Amina Rahman</a></li>
+              <li><a class="dropdown-item" href="notifications.html">Low stock: Amoxicillin 500 mg</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="notifications.html">View all notifications</a></li>
+            </ul>
+          </div>
+          <div class="dropdown ms-2">
+            <button class="btn p-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu">
+              <span class="avatar" aria-hidden="true">NK</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><h2 class="dropdown-header fs-6 text-body">Dr. Nadia Karim<br><small class="text-muted-mp fw-normal">Administrator</small></h2></li>
+              <li><a class="dropdown-item" href="account-settings.html">Account settings</a></li>
+              <li><a class="dropdown-item" href="auth-lock-screen.html">Lock screen</a></li>
+              <li><a class="dropdown-item" href="auth-login.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===== Page content ===== -->
+      <main class="content" id="main-content">
+        <div class="page-head">
+          <div><h1>Vital signs</h1><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Dashboards</a></li><li class="breadcrumb-item"><a href="patients-list.html">Patients</a></li><li class="breadcrumb-item active" aria-current="page">Amina Rahman</li></ol></nav></div>
+          
+        </div>
+        <section class="row g-4 mb-4" aria-label="Latest readings"><div class="col-sm-6 col-xl-3"><article class="card"><div class="card-body vital"><div class="text-muted-mp small mb-1">Blood pressure</div><div class="vital__value">128/82</div><div class="vital__unit">mmHg</div></div></article></div><div class="col-sm-6 col-xl-3"><article class="card"><div class="card-body vital"><div class="text-muted-mp small mb-1">Heart rate</div><div class="vital__value">74</div><div class="vital__unit">bpm</div></div></article></div><div class="col-sm-6 col-xl-3"><article class="card"><div class="card-body vital"><div class="text-muted-mp small mb-1">Temperature</div><div class="vital__value">36.7</div><div class="vital__unit">&deg;C</div></div></article></div><div class="col-sm-6 col-xl-3"><article class="card"><div class="card-body vital"><div class="text-muted-mp small mb-1">Oxygen saturation</div><div class="vital__value">98</div><div class="vital__unit">%</div></div></article></div></section>
+        <section class="row g-4" aria-label="Trends">
+          <div class="col-xl-6"><article class="card"><header class="card-header">Blood pressure, last 7 days</header><div class="card-body"><div id="chart-bp" role="img" aria-label="Line chart of systolic and diastolic blood pressure"></div></div></article></div>
+          <div class="col-xl-6"><article class="card"><header class="card-header">Heart rate, last 7 days</header><div class="card-body"><div id="chart-hr" role="img" aria-label="Line chart of heart rate"></div></div></article></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

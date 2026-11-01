@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book appointment | MediPulse</title>
+  <meta name="description" content="MediPulse clinic and healthcare admin template built with Bootstrap 5.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link id="bs-css" rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"
+        data-ltr="assets/vendor/bootstrap/bootstrap.min.css" data-rtl="assets/vendor/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="app">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary">
+      <a class="sidebar__brand" href="index.html"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i><span class="sidebar__label">MediPulse</span></a>
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <p class="sidebar__heading">Dashboards</p>
+        <a class="sidebar__link" href="index.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span class="sidebar__label">Admin overview</span></a>
+        <a class="sidebar__link" href="dashboard-doctor.html"><i class="bi bi-person-badge" aria-hidden="true"></i><span class="sidebar__label">Doctor</span></a>
+        <a class="sidebar__link" href="dashboard-analytics.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span class="sidebar__label">Analytics</span></a>
+
+        <p class="sidebar__heading">Care</p>
+        <a class="sidebar__link" href="patients-list.html"><i class="bi bi-people" aria-hidden="true"></i><span class="sidebar__label">Patients</span></a>
+        <a class="sidebar__link active" href="appointments-calendar.html" aria-current="page"><i class="bi bi-calendar2-week" aria-hidden="true"></i><span class="sidebar__label">Appointments</span><span class="badge text-bg-warning sidebar__badge">8</span></a>
+        <a class="sidebar__link" href="doctors-list.html"><i class="bi bi-hospital" aria-hidden="true"></i><span class="sidebar__label">Doctors &amp; staff</span></a>
+        <a class="sidebar__link" href="beds.html"><i class="bi bi-door-open" aria-hidden="true"></i><span class="sidebar__label">Wards &amp; beds</span></a>
+
+        <p class="sidebar__heading">Operations</p>
+        <a class="sidebar__link" href="lab-tests.html"><i class="bi bi-eyedropper" aria-hidden="true"></i><span class="sidebar__label">Laboratory</span></a>
+        <a class="sidebar__link" href="pharmacy-inventory.html"><i class="bi bi-capsule" aria-hidden="true"></i><span class="sidebar__label">Pharmacy</span></a>
+        <a class="sidebar__link" href="invoices.html"><i class="bi bi-receipt" aria-hidden="true"></i><span class="sidebar__label">Billing</span></a>
+
+        <p class="sidebar__heading">UI kit</p>
+        <a class="sidebar__link" href="ui-components.html"><i class="bi bi-box" aria-hidden="true"></i><span class="sidebar__label">Components</span></a>
+        <a class="sidebar__link" href="ui-forms.html"><i class="bi bi-input-cursor-text" aria-hidden="true"></i><span class="sidebar__label">Forms</span></a>
+        <a class="sidebar__link" href="ui-tables-charts.html"><i class="bi bi-bar-chart" aria-hidden="true"></i><span class="sidebar__label">Tables and charts</span></a>
+
+        <p class="sidebar__heading">Apps</p>
+        <a class="sidebar__link" href="chat.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span class="sidebar__label">Chat</span></a>
+        <a class="sidebar__link" href="account-settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span class="sidebar__label">Settings</span></a>
+      </nav>
+    </aside>
+    <div class="sidebar-backdrop" data-mp-action="sidebar-close"></div>
+
+    <div class="main">
+      <!-- ===== Topbar ===== -->
+      <header class="topbar">
+        <button class="btn btn-link text-reset fs-4 p-1" type="button" data-mp-action="sidebar" aria-label="Toggle sidebar"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <form class="topbar__search" role="search">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="global-search">Search</label>
+          <input id="global-search" class="form-control" type="search" placeholder="Search patients, doctors, invoices">
+        </form>
+        <div class="topbar__actions">
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="dir" aria-label="Switch text direction"><i class="bi bi-text-paragraph" aria-hidden="true"></i></button>
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i></button>
+          <div class="dropdown">
+            <button class="btn btn-link text-reset fs-5 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+              <i class="bi bi-bell" aria-hidden="true"></i><span class="position-absolute top-0 start-50 p-1 bg-danger rounded-circle"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="notifications.html">Lab result ready for Amina Rahman</a></li>
+              <li><a class="dropdown-item" href="notifications.html">Low stock: Amoxicillin 500 mg</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="notifications.html">View all notifications</a></li>
+            </ul>
+          </div>
+          <div class="dropdown ms-2">
+            <button class="btn p-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu">
+              <span class="avatar" aria-hidden="true">NK</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><h2 class="dropdown-header fs-6 text-body">Dr. Nadia Karim<br><small class="text-muted-mp fw-normal">Administrator</small></h2></li>
+              <li><a class="dropdown-item" href="account-settings.html">Account settings</a></li>
+              <li><a class="dropdown-item" href="auth-lock-screen.html">Lock screen</a></li>
+              <li><a class="dropdown-item" href="auth-login.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===== Page content ===== -->
+      <main class="content" id="main-content">
+        <div class="page-head">
+          <div><h1>Book appointment</h1><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Dashboards</a></li><li class="breadcrumb-item"><a href="appointments-calendar.html">Appointments</a></li><li class="breadcrumb-item active" aria-current="page">Book</li></ol></nav></div>
+          
+        </div>
+        <ol class="wizard-steps" aria-label="Booking steps"><li data-step-mark>1. Patient and doctor</li><li data-step-mark>2. Date and time</li><li data-step-mark>3. Confirm</li></ol>
+        <article class="card"><form class="card-body" data-wizard novalidate>
+          <section data-step aria-labelledby="s1"><h2 class="h5 mb-3" id="s1">Who is the appointment for?</h2><div class="row g-3">
+            <div class="col-md-6"><label class="form-label" for="b-patient">Patient</label><select id="b-patient" class="form-select" required><option value="">Choose a patient</option><option>Amina Rahman</option><option>Liam Morgan</option><option>Yuki Tanaka</option><option>Sofia Ortega</option></select></div>
+            <div class="col-md-6"><label class="form-label" for="b-doctor">Doctor</label><select id="b-doctor" class="form-select" required><option value="">Choose a doctor</option><option>Dr. Samir Haddad, Cardiology</option><option>Dr. Priya Nair, Pediatrics</option><option>Dr. Omar Farid, Orthopedics</option><option>Dr. Lena Weiss, Dermatology</option></select></div>
+            <div class="col-12"><label class="form-label" for="b-reason">Reason for visit</label><textarea id="b-reason" class="form-control" rows="3"></textarea></div>
+          </div></section>
+          <section data-step hidden aria-labelledby="s2"><h2 class="h5 mb-3" id="s2">Pick a date and time</h2>
+            <div class="mb-3" style="max-width:260px"><label class="form-label" for="b-date">Date</label><input id="b-date" type="date" class="form-control" required></div>
+            <fieldset><legend class="form-label fs-6">Available times</legend><div class="slot-grid"><input class="btn-check" type="radio" name="slot" id="slot0" value="09:00" required><label class="btn btn-outline-primary" for="slot0">09:00</label><input class="btn-check" type="radio" name="slot" id="slot1" value="09:30"><label class="btn btn-outline-primary" for="slot1">09:30</label><input class="btn-check" type="radio" name="slot" id="slot2" value="10:00"><label class="btn btn-outline-primary" for="slot2">10:00</label><input class="btn-check" type="radio" name="slot" id="slot3" value="10:30"><label class="btn btn-outline-primary" for="slot3">10:30</label><input class="btn-check" type="radio" name="slot" id="slot4" value="11:00"><label class="btn btn-outline-primary" for="slot4">11:00</label><input class="btn-check" type="radio" name="slot" id="slot5" value="11:30"><label class="btn btn-outline-primary" for="slot5">11:30</label><input class="btn-check" type="radio" name="slot" id="slot6" value="14:00"><label class="btn btn-outline-primary" for="slot6">14:00</label><input class="btn-check" type="radio" name="slot" id="slot7" value="14:30"><label class="btn btn-outline-primary" for="slot7">14:30</label><input class="btn-check" type="radio" name="slot" id="slot8" value="15:00"><label class="btn btn-outline-primary" for="slot8">15:00</label><input class="btn-check" type="radio" name="slot" id="slot9" value="15:30"><label class="btn btn-outline-primary" for="slot9">15:30</label></div></fieldset></section>
+          <section data-step hidden aria-labelledby="s3"><h2 class="h5 mb-3" id="s3">Check the details</h2><dl class="info-list" data-summary></dl></section>
+          <div class="d-flex justify-content-between mt-4"><button class="btn btn-outline-secondary" type="button" data-wizard-go="back">Back</button><button class="btn btn-primary" type="button" data-wizard-go="next">Continue</button></div>
+        </form></article>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/wizard.js"></script>
+</body>
+</html>

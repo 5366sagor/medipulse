@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account | MediPulse</title>
+  <meta name="description" content="MediPulse clinic and healthcare admin template built with Bootstrap 5.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link id="bs-css" rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"
+        data-ltr="assets/vendor/bootstrap/bootstrap.min.css" data-rtl="assets/vendor/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="auth">
+    <aside class="auth__aside"><a class="sidebar__brand p-0" href="index.html" style="height:auto"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i>MediPulse</a><h2>Care that runs on clear information</h2><p class="mb-0 opacity-75">Appointments, records, lab and billing in one workspace.</p></aside>
+    <main class="auth__main" id="main-content">
+      <button class="btn btn-link text-reset fs-5 auth__theme" type="button" data-mp-action="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i></button>
+      <div class="auth__box"><h1 class="h3">Create your account</h1><p class="text-muted-mp mb-4">Set up access for your clinic team.</p>
+        <form class="needs-validation" novalidate action="auth-login.html">
+          <div class="mb-3"><label class="form-label" for="full-name">Full name</label><input id="full-name" class="form-control" type="text" autocomplete="name" required><div class="invalid-feedback">Enter your full name.</div></div>
+          <div class="mb-3"><label class="form-label" for="email">Email</label><input id="email" class="form-control" type="email" autocomplete="email" placeholder="name@example.com" required><div class="invalid-feedback">Enter a valid email address.</div></div>
+          <div class="mb-3"><label class="form-label" for="role">Role</label><select id="role" class="form-select" required><option value="">Choose a role</option><option>Administrator</option><option>Doctor</option><option>Nurse or receptionist</option><option>Accountant</option></select><div class="invalid-feedback">Choose a role.</div></div>
+          <div class="mb-3"><label class="form-label" for="password">Password</label><div class="input-group"><input id="password" class="form-control" type="password" autocomplete="new-password" required><button class="btn btn-outline-secondary" type="button" data-toggle-password="password" aria-label="Show password"><i class="bi bi-eye" aria-hidden="true"></i></button><div class="invalid-feedback">Enter your password.</div></div></div>
+          <div class="form-check mb-4"><input class="form-check-input" type="checkbox" id="terms" required><label class="form-check-label" for="terms">I agree to the terms and privacy policy</label><div class="invalid-feedback">You must agree to continue.</div></div>
+          <button class="btn btn-primary w-100" type="submit">Create account</button>
+        </form><p class="text-center mt-4 mb-0">Already registered? <a href="auth-login.html">Sign in</a></p>
+      </div>
+    </main>
+  </div>
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
