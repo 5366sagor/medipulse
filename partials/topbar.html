@@ -1,0 +1,35 @@
+<!-- Top bar partial. Place inside <div class="main"> before <main>. -->
+      <header class="topbar">
+        <button class="btn btn-link text-reset fs-4 p-1" type="button" data-mp-action="sidebar" aria-label="Toggle sidebar"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <form class="topbar__search" role="search">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="global-search">Search</label>
+          <input id="global-search" class="form-control" type="search" placeholder="Search patients, doctors, invoices">
+        </form>
+        <div class="topbar__actions">
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="dir" aria-label="Switch text direction"><i class="bi bi-text-paragraph" aria-hidden="true"></i></button>
+          <button class="btn btn-link text-reset fs-5" type="button" data-mp-action="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i></button>
+          <div class="dropdown">
+            <button class="btn btn-link text-reset fs-5 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+              <i class="bi bi-bell" aria-hidden="true"></i><span class="position-absolute top-0 start-50 p-1 bg-danger rounded-circle"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="notifications.html">Lab result ready for Amina Rahman</a></li>
+              <li><a class="dropdown-item" href="notifications.html">Low stock: Amoxicillin 500 mg</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="notifications.html">View all notifications</a></li>
+            </ul>
+          </div>
+          <div class="dropdown ms-2">
+            <button class="btn p-0 d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu">
+              <span class="avatar" aria-hidden="true">NK</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><h2 class="dropdown-header fs-6 text-body">Dr. Nadia Karim<br><small class="text-muted-mp fw-normal">Administrator</small></h2></li>
+              <li><a class="dropdown-item" href="account-settings.html">Account settings</a></li>
+              <li><a class="dropdown-item" href="auth-lock-screen.html">Lock screen</a></li>
+              <li><a class="dropdown-item" href="auth-login.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
